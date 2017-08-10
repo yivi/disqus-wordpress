@@ -1382,7 +1382,7 @@ function dsq_sso() {
         return array();
     }
     global $current_user, $dsq_api;
-    get_currentuserinfo();
+    wp_get_current_user();
     if ($current_user->ID) {
         $avatar_tag = get_avatar($current_user->ID);
         $avatar_data = array();
